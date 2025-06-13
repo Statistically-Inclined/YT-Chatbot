@@ -1,0 +1,79 @@
+1. [Music]
+2. So it turns out that India isn't just
+3. buying GPUs to power its AI future, but
+4. it's building its own AI infrastructure
+5. backboard. The Ministry of Electronics
+6. and IT just shortlisted seven firms for
+7. the second round of the India AI GPU
+8. tender, which happens to be one of the
+9. biggest compute grabs in the country's
+10. history. So the shortlisted companies
+11. are Netmagic, which happens to be a
+12. Google Cloud partner and then you have
+13. Scy Future India, which is approved by
+14. the ministry. Then you have CPI
+15. Technologies, Wisco Technologies, which
+16. is backed by AWS. Then you have Locus,
+17. which is also tied with AWS. And you
+18. have Yota data services, Ishan Infoch,
+19. which is backed by Oracle. They're now
+20. invited for a technical presentation on
+21. May 14th, which happens to be the final
+22. gate before a 10,000 cr rupees worth of
+23. compute is handed over. So the ministry
+24. expects to procure 15,000 GPUs through
+25. this round. To put that into
+26. perspective, that's more than 14 times
+27. the capacity allocated in round one. And
+28. according to the bids seen by the
+29. economic times, the combined offers have
+30. already crossed
+31. 14,517 GPUs, all at L1, meaning the
+32. lowest rates. So, Wensysco, AWS, and App
+33. Squads are offering 2,000 Nvidia H100s.
+34. And then you have 100 AWS Trienium chips
+35. and 200 AWS Inferentia 2. And as a
+36. bonus, over,300 GPUs over their last
+37. bid. Locus which happens to be one of
+38. the top L1 biders in round one is back
+39. again with a new strategy. Well, the
+40. details remain confidential for now and
+41. Sci future India
+42. has,184 GPUs in the pipeline and this
+43. consists of Nvidia H100's L40s. Then you
+44. also have the A100. You also have AMD's
+45. chips, the MI300, the Mi325 and then
+46. from Intel you have their Godi 2 and the
+47. Godi 3. So Scy Future AI is already
+48. building a homegrown platform. Look,
+49. it's not just about hardware, right?
+50. because these GPUs will power India's
+51. server in LLM efforts which includes
+52. server AAI's 70 billion parameter
+53. multilingual model and also a population
+54. scale geni deployments then of course
+55. the secure cloudnative public
+56. infrastructure and with countries like
+57. US tightening GPU exports India is
+58. racing against geopolitics to build a
+59. self-reliant AI muscle so what's next so
+60. in May 14th you have technical
+61. presentations and post that there's the
+62. final selection and just announced is
+63. the round three of the GPU tender It's
+64. already open. And what is the next phase
+65. of India's AI revolution? You may ask.
+66. You'll witness it at Cipher 2025 this
+67. September 17th to 19th in Bengaluru.
+68. Because the future of AI won't just be
+69. made in Silicon Valley. So, got your
+70. tickets yet? Link is in the comments.
+71. And this year, Cipher is dedicated to
+72. one big mission which is building AI in
+73. India. So, if you're a founder, drop a
+74. comment telling us what you're building
+75. and we might just feature you next. This
+76. is Front Page by A IMTV. See you in the
+77. next update soon. And you already know
+78. what's coming, which is Think AI. Think
+79. AIM.
