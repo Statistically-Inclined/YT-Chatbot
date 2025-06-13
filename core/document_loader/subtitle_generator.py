@@ -31,12 +31,17 @@ def download_subtitles(video_url: str, output_template: str = output_template) -
         }
 
         for attempt in range(5):
+
+            logger.info(f"Requesting Subtitle... Retrying Attempt: {attempt+1}")
+
             try:
                 with yt_dlp.YoutubeDL(options) as ydl:
                     logger.info(f"[Attempt {attempt+1}/5] Downloading subtitles for URL: {video_url}")
                     ydl.download([video_url])
                     logger.info(f"Subtitle downloaded to {output_template}")
+
                     return output_template
+                
             except Exception as e:
                 logger.warning(f"Attempt {attempt+1} failed: {e}")
                 if attempt < 4:
