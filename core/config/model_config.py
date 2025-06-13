@@ -24,7 +24,7 @@ def load_model_and_embeddings():
 
         logger.info("Google API key loaded successfully.")
 
-        youtube_client = build("youtube", "v3", developerKey=youtube_api_key)
+        youtube_client = build("youtube", "v3", developerKey=youtube_api_key, cache_discovery=False)
         logger.info("YouTube API client initialized.")
 
         llm_model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.5, max_tokens=1000)

@@ -1,12 +1,15 @@
 
 import os
+import time
 import yt_dlp
 import webvtt
 from core.config.logger_config import logger
 from core.config.exceptions import ProcessingError, ResourceNotFoundError
 from core.config.directory_config import SUBTITLE_DIR, DEFAULT_VTT_FILE
 
+
 output_template = os.path.join(SUBTITLE_DIR, "transcript_temp")
+
 
 def download_subtitles(video_url: str, output_template: str = output_template) -> str:
     """
@@ -27,15 +30,22 @@ def download_subtitles(video_url: str, output_template: str = output_template) -
             'noplaylist': True
         }
 
-        with yt_dlp.YoutubeDL(options) as ydl:
-            logger.info(f"Downloading subtitles for URL: {video_url}")
-            ydl.download([video_url])
-            logger.info(f"Subtitle downloaded to {output_template}")
-
-        return output_template
+        for attempt in range(5):
+            try:
+                with yt_dlp.YoutubeDL(options) as ydl:
+                    logger.info(f"[Attempt {attempt+1}/5] Downloading subtitles for URL: {video_url}")
+                    ydl.download([video_url])
+                    logger.info(f"Subtitle downloaded to {output_template}")
+                    return output_template
+            except Exception as e:
+                logger.warning(f"Attempt {attempt+1} failed: {e}")
+                if attempt < 4:
+                    time.sleep(2)  # wait before retrying
+                else:
+                    raise
 
     except Exception as e:
-        logger.error(f"Failed to download subtitles: {e}")
+        logger.error(f"Failed to download subtitles after retries: {e}")
         raise ProcessingError("Error occurred while downloading subtitles.")
 
 

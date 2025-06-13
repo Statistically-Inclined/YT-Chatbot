@@ -10848,3 +10848,464 @@ google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quot
 2025-06-13 19:38:45,361 - core.config.logger_config - INFO - Question: who is the main character
 2025-06-13 19:38:47,845 - core.config.logger_config - INFO - Answer: The content doesn't have a main character in the traditional sense. It's focused on the collective effort of India's AI industry. You could say the *industry itself* is the "main character," or perhaps the various founders and companies working to build it.
 2025-06-13 19:38:47,847 - core.config.logger_config - INFO - Chat History: [AIMessage(content="This content is about India's efforts to build a self-reliant AI industry, despite geopolitical challenges. It mentions a GPU tender, technical presentations on May 14th, and Cipher 2025, which will be held September 17th to 19th in Bengaluru. If you're a founder, you can drop a comment about what you're building for a chance to be featured.", additional_kwargs={}, response_metadata={}), HumanMessage(content='who is the main character', additional_kwargs={}, response_metadata={}), AIMessage(content='The content doesn\'t have a main character in the traditional sense. It\'s focused on the collective effort of India\'s AI industry. You could say the *industry itself* is the "main character," or perhaps the various founders and companies working to build it.', additional_kwargs={}, response_metadata={})]
+2025-06-13 22:27:55,733 - core.config.logger_config - INFO - Video is valid and available: https://www.youtube.com/watch?v=5sLYAQS9sWQ
+2025-06-13 22:27:55,733 - core.config.logger_config - INFO - Extracted video ID: 5sLYAQS9sWQ
+2025-06-13 22:27:55,733 - core.config.logger_config - INFO - Successfully retrieved video ID '5sLYAQS9sWQ' from URL.
+2025-06-13 22:28:04,179 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-13 22:28:04,179 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-13 22:28:04,240 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-13 22:28:04,275 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-13 22:28:04,414 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-13 22:28:04,414 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-13 22:28:13,361 - core.config.logger_config - INFO - Fetching metadata for video ID: 5sLYAQS9sWQ
+2025-06-13 22:28:13,361 - core.config.logger_config - INFO - Requesting Metadata... Retrying Attempt: 1
+2025-06-13 22:28:14,348 - core.config.logger_config - INFO - Successfully fetched metadata for video ID: 5sLYAQS9sWQ
+2025-06-13 22:28:14,348 - core.config.logger_config - INFO - Video metadata saved to text: youtube_data\metadata\metadata.txt
+2025-06-13 22:28:14,365 - core.config.logger_config - INFO - Video metadata saved to JSON: youtube_data\metadata\metadata.json
+2025-06-13 22:28:23,422 - core.config.logger_config - INFO - Requesting Comments... Retrying Attempt: 1
+2025-06-13 22:28:24,012 - core.config.logger_config - INFO - Fetched 50 comments for video ID: 5sLYAQS9sWQ
+2025-06-13 22:28:24,013 - core.config.logger_config - INFO - Comments saved to TXT: youtube_data\comments\comments.txt
+2025-06-13 22:28:24,025 - core.config.logger_config - INFO - Comments saved to CSV: youtube_data\comments\comments.csv
+2025-06-13 22:28:33,188 - core.config.logger_config - INFO - Comments split into 10 chunks.
+2025-06-13 22:28:33,188 - core.config.logger_config - INFO - Built comment summarization prompt templates.
+2025-06-13 22:29:07,214 - core.config.logger_config - INFO - Comment Summarization completed.
+2025-06-13 22:29:07,214 - core.config.logger_config - INFO - Summary successfully saved to: output\comments_summary\Comment_Summary.txt
+2025-06-13 22:29:07,214 - core.config.logger_config - INFO - Summary written to file: output\comments_summary\Comment_Summary.txt
+2025-06-13 22:29:26,441 - core.config.logger_config - INFO - Available transcript languages: ['en-US']
+2025-06-13 22:29:26,441 - core.config.logger_config - INFO - Requesting Transcript... Retrying Attempt: 1
+2025-06-13 22:29:27,714 - core.config.logger_config - INFO - Transcript found using language: en-US
+2025-06-13 22:29:27,717 - core.config.logger_config - INFO - Transcript saved to TXT: youtube_data\transcript\transcript.txt
+2025-06-13 22:29:27,726 - core.config.logger_config - INFO - Transcript saved to JSON: youtube_data\transcript\transcript.json
+2025-06-13 22:29:36,823 - core.config.logger_config - INFO - Transcript split into 3 chunks for summarization.
+2025-06-13 22:29:36,823 - core.config.logger_config - INFO - Map and combine prompt templates created.
+2025-06-13 22:29:36,823 - core.config.logger_config - INFO - Summarization chain loaded with map-reduce strategy.
+2025-06-13 22:29:56,156 - core.config.logger_config - INFO - Summarization completed.
+2025-06-13 22:29:56,156 - core.config.logger_config - INFO - Summary successfully saved to: output\transcript_summary\Transcript_Summary.txt
+2025-06-13 22:29:56,156 - core.config.logger_config - INFO - Summary written to file: output\transcript_summary\Transcript_Summary.txt
+2025-06-13 22:30:06,158 - core.config.logger_config - INFO - Transcript split into 14 chunks.
+2025-06-13 22:30:09,224 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-06-13 22:30:09,680 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-13 22:30:09,750 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-06-13 22:30:09,753 - core.config.logger_config - INFO - Vector store created successfully.
+2025-06-13 22:30:09,754 - core.config.logger_config - INFO - Retriever initialized.
+2025-06-13 22:30:09,755 - core.config.logger_config - INFO - Prompt template created.
+2025-06-13 22:30:09,755 - core.config.logger_config - INFO - RAG chain constructed.
+2025-06-13 22:30:19,832 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-13 22:30:19,832 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-13 22:30:19,832 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-13 22:30:19,832 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-13 22:30:19,853 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-13 22:30:19,857 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-13 22:30:19,860 - core.config.logger_config - INFO - Transcript split into 14 chunks.
+2025-06-13 22:30:22,297 - core.config.logger_config - INFO - Vector store created successfully.
+2025-06-13 22:30:22,297 - core.config.logger_config - INFO - Retriever initialized.
+2025-06-13 22:30:22,297 - core.config.logger_config - INFO - Prompt template created.
+2025-06-13 22:30:22,304 - core.config.logger_config - INFO - RAG chain constructed.
+2025-06-13 23:54:42,112 - core.config.logger_config - INFO - Video is valid and available: https://www.youtube.com/watch?v=5sLYAQS9sWQ
+2025-06-13 23:54:42,116 - core.config.logger_config - INFO - Extracted video ID: 5sLYAQS9sWQ
+2025-06-13 23:54:42,117 - core.config.logger_config - INFO - Successfully retrieved video ID '5sLYAQS9sWQ' from URL.
+2025-06-13 23:54:50,810 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-13 23:54:50,811 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-13 23:54:50,820 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-13 23:54:50,839 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-13 23:54:50,852 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-13 23:54:50,860 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-13 23:54:59,947 - core.config.logger_config - INFO - Fetching metadata for video ID: 5sLYAQS9sWQ
+2025-06-13 23:54:59,947 - core.config.logger_config - INFO - Requesting Metadata... Retrying Attempt: 1
+2025-06-13 23:55:00,433 - core.config.logger_config - INFO - Successfully fetched metadata for video ID: 5sLYAQS9sWQ
+2025-06-13 23:55:00,437 - core.config.logger_config - INFO - Video metadata saved to text: youtube_data\metadata\metadata.txt
+2025-06-13 23:55:00,443 - core.config.logger_config - INFO - Video metadata saved to JSON: youtube_data\metadata\metadata.json
+2025-06-13 23:55:09,683 - core.config.logger_config - INFO - Requesting Comments... Retrying Attempt: 1
+2025-06-13 23:55:10,097 - core.config.logger_config - INFO - Fetched 50 comments for video ID: 5sLYAQS9sWQ
+2025-06-13 23:55:10,101 - core.config.logger_config - INFO - Comments saved to TXT: youtube_data\comments\comments.txt
+2025-06-13 23:55:10,107 - core.config.logger_config - INFO - Comments saved to CSV: youtube_data\comments\comments.csv
+2025-06-13 23:55:19,465 - core.config.logger_config - INFO - Comments split into 10 chunks.
+2025-06-13 23:55:19,466 - core.config.logger_config - INFO - Built comment summarization prompt templates.
+2025-06-13 23:55:45,047 - core.config.logger_config - INFO - Comment Summarization completed.
+2025-06-13 23:55:45,051 - core.config.logger_config - INFO - Summary successfully saved to: output\comments_summary\Comment_Summary.txt
+2025-06-13 23:55:45,053 - core.config.logger_config - INFO - Summary written to file: output\comments_summary\Comment_Summary.txt
+2025-06-13 23:56:04,619 - core.config.logger_config - INFO - Available transcript languages: ['en-US']
+2025-06-13 23:56:04,619 - core.config.logger_config - INFO - Requesting Transcript... Retrying Attempt: 1
+2025-06-13 23:56:05,815 - core.config.logger_config - INFO - Transcript found using language: en-US
+2025-06-13 23:56:05,820 - core.config.logger_config - INFO - Transcript saved to TXT: youtube_data\transcript\transcript.txt
+2025-06-13 23:56:05,833 - core.config.logger_config - INFO - Transcript saved to JSON: youtube_data\transcript\transcript.json
+2025-06-13 23:56:15,031 - core.config.logger_config - INFO - Transcript split into 3 chunks for summarization.
+2025-06-13 23:56:15,033 - core.config.logger_config - INFO - Map and combine prompt templates created.
+2025-06-13 23:56:15,034 - core.config.logger_config - INFO - Summarization chain loaded with map-reduce strategy.
+2025-06-13 23:56:23,235 - core.config.logger_config - INFO - Summarization completed.
+2025-06-13 23:56:23,237 - core.config.logger_config - INFO - Summary successfully saved to: output\transcript_summary\Transcript_Summary.txt
+2025-06-13 23:56:23,241 - core.config.logger_config - INFO - Summary written to file: output\transcript_summary\Transcript_Summary.txt
+2025-06-13 23:56:33,246 - core.config.logger_config - INFO - Transcript split into 14 chunks.
+2025-06-13 23:56:35,853 - core.config.logger_config - INFO - Vector store created successfully.
+2025-06-13 23:56:35,854 - core.config.logger_config - INFO - Retriever initialized.
+2025-06-13 23:56:35,856 - core.config.logger_config - INFO - Prompt template created.
+2025-06-13 23:56:35,857 - core.config.logger_config - INFO - RAG chain constructed.
+2025-06-13 23:56:45,898 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-13 23:56:45,899 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-13 23:56:45,908 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-13 23:56:45,930 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-13 23:56:45,937 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-13 23:56:45,941 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-13 23:56:45,945 - core.config.logger_config - INFO - Transcript split into 14 chunks.
+2025-06-13 23:56:48,491 - core.config.logger_config - INFO - Vector store created successfully.
+2025-06-13 23:56:48,492 - core.config.logger_config - INFO - Retriever initialized.
+2025-06-13 23:56:48,495 - core.config.logger_config - INFO - Prompt template created.
+2025-06-13 23:56:48,497 - core.config.logger_config - INFO - RAG chain constructed.
+2025-06-13 23:57:46,940 - core.config.logger_config - INFO - Video is valid and available: https://www.youtube.com/watch?v=5sLYAQS9sWQ
+2025-06-13 23:57:46,940 - core.config.logger_config - INFO - Extracted video ID: 5sLYAQS9sWQ
+2025-06-13 23:57:46,940 - core.config.logger_config - INFO - Successfully retrieved video ID '5sLYAQS9sWQ' from URL.
+2025-06-13 23:57:55,628 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-13 23:57:55,628 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-13 23:57:55,647 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-13 23:57:55,669 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-13 23:57:55,702 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-13 23:57:55,721 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-13 23:58:04,876 - core.config.logger_config - INFO - Fetching metadata for video ID: 5sLYAQS9sWQ
+2025-06-13 23:58:04,876 - core.config.logger_config - INFO - Requesting Metadata... Retrying Attempt: 1
+2025-06-13 23:58:05,441 - core.config.logger_config - INFO - Successfully fetched metadata for video ID: 5sLYAQS9sWQ
+2025-06-13 23:58:05,441 - core.config.logger_config - INFO - Video metadata saved to text: youtube_data\metadata\metadata.txt
+2025-06-13 23:58:05,457 - core.config.logger_config - INFO - Video metadata saved to JSON: youtube_data\metadata\metadata.json
+2025-06-13 23:58:14,723 - core.config.logger_config - INFO - Requesting Comments... Retrying Attempt: 1
+2025-06-13 23:58:15,161 - core.config.logger_config - INFO - Fetched 50 comments for video ID: 5sLYAQS9sWQ
+2025-06-13 23:58:15,161 - core.config.logger_config - INFO - Comments saved to TXT: youtube_data\comments\comments.txt
+2025-06-13 23:58:15,161 - core.config.logger_config - INFO - Comments saved to CSV: youtube_data\comments\comments.csv
+2025-06-13 23:58:24,504 - core.config.logger_config - INFO - Comments split into 10 chunks.
+2025-06-13 23:58:24,504 - core.config.logger_config - INFO - Built comment summarization prompt templates.
+2025-06-13 23:58:49,730 - core.config.logger_config - INFO - Comment Summarization completed.
+2025-06-13 23:58:49,730 - core.config.logger_config - INFO - Summary successfully saved to: output\comments_summary\Comment_Summary.txt
+2025-06-13 23:58:49,730 - core.config.logger_config - INFO - Summary written to file: output\comments_summary\Comment_Summary.txt
+2025-06-13 23:59:09,091 - core.config.logger_config - ERROR - Unexpected error: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=69! This is most likely caused by:
+
+Request to YouTube failed: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 95, in _raise_http_errors
+    response.raise_for_status()
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\YT_Chatbot\core\document_loader\transcript_generator.py", line 30, in get_transcript_with_priority
+    transcripts = YouTubeTranscriptApi.list_transcripts(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_api.py", line 188, in list_transcripts
+    return ytt_api.list(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_api.py", line 119, in list
+    return self._fetcher.fetch(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 354, in fetch
+    self._fetch_captions_json(video_id),
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 361, in _fetch_captions_json
+    innertube_data = self._fetch_innertube_data(video_id, api_key)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 451, in _fetch_innertube_data
+    data = _raise_http_errors(response, video_id).json()
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 98, in _raise_http_errors
+    raise YouTubeRequestFailed(video_id, error)
+youtube_transcript_api._errors.YouTubeRequestFailed: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=69! This is most likely caused by:
+
+Request to YouTube failed: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-06-13 23:59:18,466 - core.config.logger_config - INFO - Downloading subtitles for URL: https://www.youtube.com/watch?v=5sLYAQS9sWQ
+2025-06-13 23:59:27,335 - core.config.logger_config - INFO - Subtitle downloaded to youtube_data\subtitle\transcript_temp
+2025-06-13 23:59:27,351 - core.config.logger_config - ERROR - Subtitle file not found: youtube_data\subtitle\transcript_temp.en.vtt
+2025-06-13 23:59:27,352 - core.config.logger_config - ERROR - Subtitle generation failed: Subtitle file not found: youtube_data\subtitle\transcript_temp.en.vtt
+2025-06-14 00:03:41,317 - core.config.logger_config - INFO - Video is valid and available: https://www.youtube.com/watch?v=5sLYAQS9sWQ
+2025-06-14 00:03:41,320 - core.config.logger_config - INFO - Extracted video ID: 5sLYAQS9sWQ
+2025-06-14 00:03:41,320 - core.config.logger_config - INFO - Successfully retrieved video ID '5sLYAQS9sWQ' from URL.
+2025-06-14 00:03:49,873 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-14 00:03:49,874 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-14 00:03:49,890 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-14 00:03:49,911 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-14 00:03:49,920 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-14 00:03:49,925 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-14 00:03:58,806 - core.config.logger_config - INFO - Fetching metadata for video ID: 5sLYAQS9sWQ
+2025-06-14 00:03:58,806 - core.config.logger_config - INFO - Requesting Metadata... Retrying Attempt: 1
+2025-06-14 00:03:59,253 - core.config.logger_config - INFO - Successfully fetched metadata for video ID: 5sLYAQS9sWQ
+2025-06-14 00:03:59,253 - core.config.logger_config - INFO - Video metadata saved to text: youtube_data\metadata\metadata.txt
+2025-06-14 00:03:59,253 - core.config.logger_config - INFO - Video metadata saved to JSON: youtube_data\metadata\metadata.json
+2025-06-14 00:04:08,340 - core.config.logger_config - INFO - Requesting Comments... Retrying Attempt: 1
+2025-06-14 00:04:08,756 - core.config.logger_config - INFO - Fetched 50 comments for video ID: 5sLYAQS9sWQ
+2025-06-14 00:04:08,756 - core.config.logger_config - INFO - Comments saved to TXT: youtube_data\comments\comments.txt
+2025-06-14 00:04:08,768 - core.config.logger_config - INFO - Comments saved to CSV: youtube_data\comments\comments.csv
+2025-06-14 00:04:17,887 - core.config.logger_config - INFO - Comments split into 10 chunks.
+2025-06-14 00:04:17,888 - core.config.logger_config - INFO - Built comment summarization prompt templates.
+2025-06-14 00:04:43,037 - core.config.logger_config - INFO - Comment Summarization completed.
+2025-06-14 00:04:43,037 - core.config.logger_config - INFO - Summary successfully saved to: output\comments_summary\Comment_Summary.txt
+2025-06-14 00:04:43,037 - core.config.logger_config - INFO - Summary written to file: output\comments_summary\Comment_Summary.txt
+2025-06-14 00:05:02,526 - core.config.logger_config - ERROR - Unexpected error: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=69! This is most likely caused by:
+
+Request to YouTube failed: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 95, in _raise_http_errors
+    response.raise_for_status()
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\YT_Chatbot\core\document_loader\transcript_generator.py", line 30, in get_transcript_with_priority
+    transcripts = YouTubeTranscriptApi.list_transcripts(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_api.py", line 188, in list_transcripts
+    return ytt_api.list(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_api.py", line 119, in list
+    return self._fetcher.fetch(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 354, in fetch
+    self._fetch_captions_json(video_id),
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 361, in _fetch_captions_json
+    innertube_data = self._fetch_innertube_data(video_id, api_key)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 451, in _fetch_innertube_data
+    data = _raise_http_errors(response, video_id).json()
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 98, in _raise_http_errors
+    raise YouTubeRequestFailed(video_id, error)
+youtube_transcript_api._errors.YouTubeRequestFailed: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=69! This is most likely caused by:
+
+Request to YouTube failed: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-06-14 00:05:11,784 - core.config.logger_config - INFO - Downloading subtitles for URL: https://www.youtube.com/watch?v=5sLYAQS9sWQ
+2025-06-14 00:05:18,019 - core.config.logger_config - INFO - Subtitle downloaded to youtube_data\subtitle\transcript_temp
+2025-06-14 00:05:18,022 - core.config.logger_config - ERROR - Subtitle file not found: youtube_data\subtitle\transcript_temp.en.vtt
+2025-06-14 00:05:18,022 - core.config.logger_config - ERROR - Subtitle generation failed: Subtitle file not found: youtube_data\subtitle\transcript_temp.en.vtt
+2025-06-14 00:06:21,957 - core.config.logger_config - INFO - Video is valid and available: https://www.youtube.com/watch?v=LPZh9BOjkQs&t=2s
+2025-06-14 00:06:21,959 - core.config.logger_config - INFO - Extracted video ID: LPZh9BOjkQs
+2025-06-14 00:06:21,959 - core.config.logger_config - INFO - Successfully retrieved video ID 'LPZh9BOjkQs' from URL.
+2025-06-14 00:06:30,581 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-14 00:06:30,582 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-14 00:06:30,586 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-14 00:06:30,592 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-14 00:06:30,597 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-14 00:06:30,601 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-14 00:06:39,698 - core.config.logger_config - INFO - Fetching metadata for video ID: LPZh9BOjkQs
+2025-06-14 00:06:39,699 - core.config.logger_config - INFO - Requesting Metadata... Retrying Attempt: 1
+2025-06-14 00:06:40,241 - core.config.logger_config - INFO - Successfully fetched metadata for video ID: LPZh9BOjkQs
+2025-06-14 00:06:40,244 - core.config.logger_config - INFO - Video metadata saved to text: youtube_data\metadata\metadata.txt
+2025-06-14 00:06:40,249 - core.config.logger_config - INFO - Video metadata saved to JSON: youtube_data\metadata\metadata.json
+2025-06-14 00:06:49,490 - core.config.logger_config - INFO - Requesting Comments... Retrying Attempt: 1
+2025-06-14 00:06:50,000 - core.config.logger_config - INFO - Fetched 50 comments for video ID: LPZh9BOjkQs
+2025-06-14 00:06:50,004 - core.config.logger_config - INFO - Comments saved to TXT: youtube_data\comments\comments.txt
+2025-06-14 00:06:50,010 - core.config.logger_config - INFO - Comments saved to CSV: youtube_data\comments\comments.csv
+2025-06-14 00:06:59,360 - core.config.logger_config - INFO - Comments split into 11 chunks.
+2025-06-14 00:06:59,360 - core.config.logger_config - INFO - Built comment summarization prompt templates.
+2025-06-14 00:07:28,961 - core.config.logger_config - INFO - Comment Summarization completed.
+2025-06-14 00:07:28,964 - core.config.logger_config - INFO - Summary successfully saved to: output\comments_summary\Comment_Summary.txt
+2025-06-14 00:07:28,965 - core.config.logger_config - INFO - Summary written to file: output\comments_summary\Comment_Summary.txt
+2025-06-14 00:07:48,140 - core.config.logger_config - ERROR - Unexpected error: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=69! This is most likely caused by:
+
+Request to YouTube failed: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 95, in _raise_http_errors
+    response.raise_for_status()
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\YT_Chatbot\core\document_loader\transcript_generator.py", line 30, in get_transcript_with_priority
+    transcripts = YouTubeTranscriptApi.list_transcripts(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_api.py", line 188, in list_transcripts
+    return ytt_api.list(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_api.py", line 119, in list
+    return self._fetcher.fetch(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 354, in fetch
+    self._fetch_captions_json(video_id),
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 361, in _fetch_captions_json
+    innertube_data = self._fetch_innertube_data(video_id, api_key)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 451, in _fetch_innertube_data
+    data = _raise_http_errors(response, video_id).json()
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 98, in _raise_http_errors
+    raise YouTubeRequestFailed(video_id, error)
+youtube_transcript_api._errors.YouTubeRequestFailed: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=69! This is most likely caused by:
+
+Request to YouTube failed: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-06-14 00:07:57,359 - core.config.logger_config - INFO - Downloading subtitles for URL: https://www.youtube.com/watch?v=LPZh9BOjkQs&t=2s
+2025-06-14 00:08:07,311 - core.config.logger_config - INFO - Subtitle downloaded to youtube_data\subtitle\transcript_temp
+2025-06-14 00:08:07,357 - core.config.logger_config - INFO - Parsed and cleaned subtitles from youtube_data\subtitle\transcript_temp.en.vtt
+2025-06-14 00:08:07,366 - core.config.logger_config - INFO - Transcript Subtitle saved to JSON: youtube_data\subtitle\transcript_subtitle.json
+2025-06-14 00:08:07,368 - core.config.logger_config - INFO - Transcript Subtitle saved to TXT: youtube_data\subtitle\transcript_subtitle.txt
+2025-06-14 00:08:16,523 - core.config.logger_config - INFO - Transcript split into 5 chunks for summarization.
+2025-06-14 00:08:16,525 - core.config.logger_config - INFO - Map and combine prompt templates created.
+2025-06-14 00:08:16,526 - core.config.logger_config - INFO - Summarization chain loaded with map-reduce strategy.
+2025-06-14 00:08:30,175 - core.config.logger_config - INFO - Summarization completed.
+2025-06-14 00:08:30,179 - core.config.logger_config - INFO - Summary successfully saved to: output\transcript_summary\Transcript_Summary.txt
+2025-06-14 00:08:30,181 - core.config.logger_config - INFO - Summary written to file: output\transcript_summary\Transcript_Summary.txt
+2025-06-14 00:08:40,166 - core.config.logger_config - INFO - Transcript split into 25 chunks.
+2025-06-14 00:08:43,273 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-06-14 00:08:43,315 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-14 00:08:43,330 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-06-14 00:08:43,333 - core.config.logger_config - INFO - Vector store created successfully.
+2025-06-14 00:08:43,333 - core.config.logger_config - INFO - Retriever initialized.
+2025-06-14 00:08:43,334 - core.config.logger_config - INFO - Prompt template created.
+2025-06-14 00:08:43,335 - core.config.logger_config - INFO - RAG chain constructed.
+2025-06-14 00:08:53,357 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-14 00:08:53,358 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-14 00:08:53,367 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-06-14 00:08:53,393 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-14 00:08:53,399 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-14 00:08:53,407 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-14 00:08:53,409 - core.config.logger_config - INFO - Transcript split into 25 chunks.
+2025-06-14 00:08:56,937 - core.config.logger_config - INFO - Vector store created successfully.
+2025-06-14 00:08:56,938 - core.config.logger_config - INFO - Retriever initialized.
+2025-06-14 00:08:56,939 - core.config.logger_config - INFO - Prompt template created.
+2025-06-14 00:08:56,940 - core.config.logger_config - INFO - RAG chain constructed.
+2025-06-14 00:28:56,282 - core.config.logger_config - INFO - Video is valid and available: https://www.youtube.com/watch?v=67_aMPDk2zw
+2025-06-14 00:28:56,284 - core.config.logger_config - INFO - Extracted video ID: 67_aMPDk2zw
+2025-06-14 00:28:56,285 - core.config.logger_config - INFO - Successfully retrieved video ID '67_aMPDk2zw' from URL.
+2025-06-14 00:29:04,904 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-14 00:29:04,905 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-14 00:29:04,932 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-14 00:29:04,977 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-14 00:29:04,982 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-14 00:29:14,080 - core.config.logger_config - INFO - Fetching metadata for video ID: 67_aMPDk2zw
+2025-06-14 00:29:14,080 - core.config.logger_config - INFO - Requesting Metadata... Retrying Attempt: 1
+2025-06-14 00:29:14,623 - core.config.logger_config - INFO - Successfully fetched metadata for video ID: 67_aMPDk2zw
+2025-06-14 00:29:14,627 - core.config.logger_config - INFO - Video metadata saved to text: youtube_data\metadata\metadata.txt
+2025-06-14 00:29:14,633 - core.config.logger_config - INFO - Video metadata saved to JSON: youtube_data\metadata\metadata.json
+2025-06-14 00:29:23,902 - core.config.logger_config - INFO - Requesting Comments... Retrying Attempt: 1
+2025-06-14 00:29:24,364 - core.config.logger_config - INFO - Fetched 50 comments for video ID: 67_aMPDk2zw
+2025-06-14 00:29:24,368 - core.config.logger_config - INFO - Comments saved to TXT: youtube_data\comments\comments.txt
+2025-06-14 00:29:24,374 - core.config.logger_config - INFO - Comments saved to CSV: youtube_data\comments\comments.csv
+2025-06-14 00:29:33,732 - core.config.logger_config - INFO - Comments split into 6 chunks.
+2025-06-14 00:29:33,733 - core.config.logger_config - INFO - Built comment summarization prompt templates.
+2025-06-14 00:29:49,291 - core.config.logger_config - INFO - Comment Summarization completed.
+2025-06-14 00:29:49,295 - core.config.logger_config - INFO - Summary successfully saved to: output\comments_summary\Comment_Summary.txt
+2025-06-14 00:29:49,297 - core.config.logger_config - INFO - Summary written to file: output\comments_summary\Comment_Summary.txt
+2025-06-14 00:30:08,731 - core.config.logger_config - ERROR - Unexpected error: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=69! This is most likely caused by:
+
+Request to YouTube failed: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 95, in _raise_http_errors
+    response.raise_for_status()
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\YT_Chatbot\core\document_loader\transcript_generator.py", line 30, in get_transcript_with_priority
+    transcripts = YouTubeTranscriptApi.list_transcripts(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_api.py", line 188, in list_transcripts
+    return ytt_api.list(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_api.py", line 119, in list
+    return self._fetcher.fetch(video_id)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 354, in fetch
+    self._fetch_captions_json(video_id),
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 361, in _fetch_captions_json
+    innertube_data = self._fetch_innertube_data(video_id, api_key)
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 451, in _fetch_innertube_data
+    data = _raise_http_errors(response, video_id).json()
+  File "C:\Users\user\Desktop\YT_Chatbot\venv\lib\site-packages\youtube_transcript_api\_transcripts.py", line 98, in _raise_http_errors
+    raise YouTubeRequestFailed(video_id, error)
+youtube_transcript_api._errors.YouTubeRequestFailed: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=69! This is most likely caused by:
+
+Request to YouTube failed: 400 Client Error: Bad Request for url: https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-06-14 00:30:18,064 - core.config.logger_config - INFO - [Attempt 1/5] Downloading subtitles for URL: https://www.youtube.com/watch?v=67_aMPDk2zw
+2025-06-14 00:30:25,458 - core.config.logger_config - INFO - Subtitle downloaded to youtube_data\subtitle\transcript_temp
+2025-06-14 00:30:25,499 - core.config.logger_config - INFO - Parsed and cleaned subtitles from youtube_data\subtitle\transcript_temp.en.vtt
+2025-06-14 00:30:25,505 - core.config.logger_config - INFO - Transcript Subtitle saved to JSON: youtube_data\subtitle\transcript_subtitle.json
+2025-06-14 00:30:25,507 - core.config.logger_config - INFO - Transcript Subtitle saved to TXT: youtube_data\subtitle\transcript_subtitle.txt
+2025-06-14 00:30:34,668 - core.config.logger_config - INFO - Transcript split into 3 chunks for summarization.
+2025-06-14 00:30:34,670 - core.config.logger_config - INFO - Map and combine prompt templates created.
+2025-06-14 00:30:34,671 - core.config.logger_config - INFO - Summarization chain loaded with map-reduce strategy.
+2025-06-14 00:30:44,423 - core.config.logger_config - INFO - Summarization completed.
+2025-06-14 00:30:44,427 - core.config.logger_config - INFO - Summary successfully saved to: output\transcript_summary\Transcript_Summary.txt
+2025-06-14 00:30:44,429 - core.config.logger_config - INFO - Summary written to file: output\transcript_summary\Transcript_Summary.txt
+2025-06-14 00:30:54,394 - core.config.logger_config - INFO - Transcript split into 12 chunks.
+2025-06-14 00:30:57,014 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-06-14 00:30:57,057 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-14 00:30:57,067 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-06-14 00:30:57,069 - core.config.logger_config - INFO - Vector store created successfully.
+2025-06-14 00:30:57,070 - core.config.logger_config - INFO - Retriever initialized.
+2025-06-14 00:30:57,072 - core.config.logger_config - INFO - Prompt template created.
+2025-06-14 00:30:57,074 - core.config.logger_config - INFO - RAG chain constructed.
+2025-06-14 00:31:07,119 - core.config.logger_config - INFO - YouTube API key loaded successfully.
+2025-06-14 00:31:07,120 - core.config.logger_config - INFO - Google API key loaded successfully.
+2025-06-14 00:31:07,144 - core.config.logger_config - INFO - YouTube API client initialized.
+2025-06-14 00:31:07,160 - core.config.logger_config - INFO - Gemini model loaded successfully.
+2025-06-14 00:31:07,166 - core.config.logger_config - INFO - Embedding model loaded successfully.
+2025-06-14 00:31:07,167 - core.config.logger_config - INFO - Transcript split into 12 chunks.
+2025-06-14 00:31:09,586 - core.config.logger_config - INFO - Vector store created successfully.
+2025-06-14 00:31:09,587 - core.config.logger_config - INFO - Retriever initialized.
+2025-06-14 00:31:09,589 - core.config.logger_config - INFO - Prompt template created.
+2025-06-14 00:31:09,591 - core.config.logger_config - INFO - RAG chain constructed.
+2025-06-14 00:39:16,175 - core.config.logger_config - INFO - Question: Hi
+2025-06-14 00:39:19,874 - core.config.logger_config - INFO - Answer: Buddy is like a parrot with a sharp memory, able to mimic conversations accurately. For example, if he hears "feeling hungry", he's more likely to say "biryani", "cherries", or "food"—but he doesn't truly understand what these words mean. Instead, he uses statistical probability and randomness to predict the next word based on past conversations. In other words, Buddy is a stochastic parrot.
+2025-06-14 00:39:19,877 - core.config.logger_config - INFO - Chat History: [HumanMessage(content='Hi', additional_kwargs={}, response_metadata={}), AIMessage(content='Buddy is like a parrot with a sharp memory, able to mimic conversations accurately. For example, if he hears "feeling hungry", he\'s more likely to say "biryani", "cherries", or "food"—but he doesn\'t truly understand what these words mean. Instead, he uses statistical probability and randomness to predict the next word based on past conversations. In other words, Buddy is a stochastic parrot.', additional_kwargs={}, response_metadata={})]
+2025-06-14 00:40:37,025 - core.config.logger_config - INFO - Question: explain in simple way
+2025-06-14 00:40:39,497 - core.config.logger_config - INFO - Answer: Okay, imagine Buddy is a parrot that's really good at repeating things it's heard before.
+
+*   **He's like a parrot:** He doesn't really *understand* what he's saying.
+*   **Sharp memory:** He remembers lots of conversations.
+*   **Mimicking conversations:** He can repeat those conversations back to you.
+*   **Predicting the next word:** He guesses what word should come next based on what he's heard before.
+
+So, if you say "I like...", Buddy might say "pizza" because he's heard "I like pizza" a lot. But he doesn't actually know what "pizza" *is* or why you like it. He's just repeating what he's learned.
+
+He's called a "stochastic parrot" because he uses **randomness (stochastic)** and **repetition (parrot)** to generate responses.
+2025-06-14 00:40:39,504 - core.config.logger_config - INFO - Chat History: [AIMessage(content='Buddy is like a parrot with a sharp memory, able to mimic conversations accurately. For example, if he hears "feeling hungry", he\'s more likely to say "biryani", "cherries", or "food"—but he doesn\'t truly understand what these words mean. Instead, he uses statistical probability and randomness to predict the next word based on past conversations. In other words, Buddy is a stochastic parrot.', additional_kwargs={}, response_metadata={}), HumanMessage(content='explain in simple way', additional_kwargs={}, response_metadata={}), AIMessage(content='Okay, imagine Buddy is a parrot that\'s really good at repeating things it\'s heard before.\n\n*   **He\'s like a parrot:** He doesn\'t really *understand* what he\'s saying.\n*   **Sharp memory:** He remembers lots of conversations.\n*   **Mimicking conversations:** He can repeat those conversations back to you.\n*   **Predicting the next word:** He guesses what word should come next based on what he\'s heard before.\n\nSo, if you say "I like...", Buddy might say "pizza" because he\'s heard "I like pizza" a lot. But he doesn\'t actually know what "pizza" *is* or why you like it. He\'s just repeating what he\'s learned.\n\nHe\'s called a "stochastic parrot" because he uses **randomness (stochastic)** and **repetition (parrot)** to generate responses.', additional_kwargs={}, response_metadata={})]
+2025-06-14 00:41:37,073 - core.config.logger_config - INFO - Question: what is transformer'
+2025-06-14 00:41:41,448 - core.config.logger_config - INFO - Answer: Okay, imagine you're trying to translate a sentence from English to Spanish. A transformer is like a super-smart machine that can do this really well. Here's a simple breakdown:
+
+*   **It's a type of neural network:** Think of it as a complex computer program inspired by how the brain works.
+*   **Designed for sequences:** It's really good at understanding and processing sequences of things, like words in a sentence, or notes in a song.
+*   **Attention is key:** The most important part is "attention." It allows the transformer to focus on the *relevant* parts of the input when making a prediction. For example, when translating "The cat sat on the mat," the transformer knows that "cat" is related to "gato" in Spanish.
+*   **Encoder and Decoder:** It usually has two main parts:
+    *   **Encoder:** Reads the input (e.g., the English sentence) and creates a representation of its meaning.
+    *   **Decoder:** Uses that representation to generate the output (e.g., the Spanish sentence).
+*   **Parallel Processing:** Unlike older methods, transformers can process the entire input sequence at once (in parallel), making them much faster.
+
+**In simpler terms:**
+
+Think of it like this: You're reading a book. A transformer is like a super-smart reader that can:
+
+1.  **Understand the whole story at once:** It doesn't just read word-by-word, but understands the context of the entire passage.
+2.  **Pay attention to the important parts:** It knows which parts of the story are most relevant to what's happening right now.
+3.  **Use that understanding to answer questions about the story:** It can summarize the plot, translate it into another language, or even write a sequel.
+
+**Why are they important?**
+
+Transformers are the foundation for many powerful AI models, including:
+
+*   **Large Language Models (LLMs):** Like ChatGPT, Bard, and others, which can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.
+*   **Image recognition models:** Used to identify objects in images.
+*   **Speech recognition models:** Used to convert speech to text.
+
+They've revolutionized the field of AI because of their ability to understand context and process information efficiently.
+2025-06-14 00:41:41,465 - core.config.logger_config - INFO - Chat History: [AIMessage(content='Okay, imagine Buddy is a parrot that\'s really good at repeating things it\'s heard before.\n\n*   **He\'s like a parrot:** He doesn\'t really *understand* what he\'s saying.\n*   **Sharp memory:** He remembers lots of conversations.\n*   **Mimicking conversations:** He can repeat those conversations back to you.\n*   **Predicting the next word:** He guesses what word should come next based on what he\'s heard before.\n\nSo, if you say "I like...", Buddy might say "pizza" because he\'s heard "I like pizza" a lot. But he doesn\'t actually know what "pizza" *is* or why you like it. He\'s just repeating what he\'s learned.\n\nHe\'s called a "stochastic parrot" because he uses **randomness (stochastic)** and **repetition (parrot)** to generate responses.', additional_kwargs={}, response_metadata={}), HumanMessage(content="what is transformer'", additional_kwargs={}, response_metadata={}), AIMessage(content='Okay, imagine you\'re trying to translate a sentence from English to Spanish. A transformer is like a super-smart machine that can do this really well. Here\'s a simple breakdown:\n\n*   **It\'s a type of neural network:** Think of it as a complex computer program inspired by how the brain works.\n*   **Designed for sequences:** It\'s really good at understanding and processing sequences of things, like words in a sentence, or notes in a song.\n*   **Attention is key:** The most important part is "attention." It allows the transformer to focus on the *relevant* parts of the input when making a prediction. For example, when translating "The cat sat on the mat," the transformer knows that "cat" is related to "gato" in Spanish.\n*   **Encoder and Decoder:** It usually has two main parts:\n    *   **Encoder:** Reads the input (e.g., the English sentence) and creates a representation of its meaning.\n    *   **Decoder:** Uses that representation to generate the output (e.g., the Spanish sentence).\n*   **Parallel Processing:** Unlike older methods, transformers can process the entire input sequence at once (in parallel), making them much faster.\n\n**In simpler terms:**\n\nThink of it like this: You\'re reading a book. A transformer is like a super-smart reader that can:\n\n1.  **Understand the whole story at once:** It doesn\'t just read word-by-word, but understands the context of the entire passage.\n2.  **Pay attention to the important parts:** It knows which parts of the story are most relevant to what\'s happening right now.\n3.  **Use that understanding to answer questions about the story:** It can summarize the plot, translate it into another language, or even write a sequel.\n\n**Why are they important?**\n\nTransformers are the foundation for many powerful AI models, including:\n\n*   **Large Language Models (LLMs):** Like ChatGPT, Bard, and others, which can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.\n*   **Image recognition models:** Used to identify objects in images.\n*   **Speech recognition models:** Used to convert speech to text.\n\nThey\'ve revolutionized the field of AI because of their ability to understand context and process information efficiently.', additional_kwargs={}, response_metadata={})]
+2025-06-14 00:43:02,917 - core.config.logger_config - INFO - Question: explain...in one line
+2025-06-14 00:43:04,395 - core.config.logger_config - INFO - Answer: A transformer is a neural network architecture that uses attention mechanisms to efficiently process sequential data for tasks like translation and text generation.
+2025-06-14 00:43:04,397 - core.config.logger_config - INFO - Chat History: [AIMessage(content='Okay, imagine you\'re trying to translate a sentence from English to Spanish. A transformer is like a super-smart machine that can do this really well. Here\'s a simple breakdown:\n\n*   **It\'s a type of neural network:** Think of it as a complex computer program inspired by how the brain works.\n*   **Designed for sequences:** It\'s really good at understanding and processing sequences of things, like words in a sentence, or notes in a song.\n*   **Attention is key:** The most important part is "attention." It allows the transformer to focus on the *relevant* parts of the input when making a prediction. For example, when translating "The cat sat on the mat," the transformer knows that "cat" is related to "gato" in Spanish.\n*   **Encoder and Decoder:** It usually has two main parts:\n    *   **Encoder:** Reads the input (e.g., the English sentence) and creates a representation of its meaning.\n    *   **Decoder:** Uses that representation to generate the output (e.g., the Spanish sentence).\n*   **Parallel Processing:** Unlike older methods, transformers can process the entire input sequence at once (in parallel), making them much faster.\n\n**In simpler terms:**\n\nThink of it like this: You\'re reading a book. A transformer is like a super-smart reader that can:\n\n1.  **Understand the whole story at once:** It doesn\'t just read word-by-word, but understands the context of the entire passage.\n2.  **Pay attention to the important parts:** It knows which parts of the story are most relevant to what\'s happening right now.\n3.  **Use that understanding to answer questions about the story:** It can summarize the plot, translate it into another language, or even write a sequel.\n\n**Why are they important?**\n\nTransformers are the foundation for many powerful AI models, including:\n\n*   **Large Language Models (LLMs):** Like ChatGPT, Bard, and others, which can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.\n*   **Image recognition models:** Used to identify objects in images.\n*   **Speech recognition models:** Used to convert speech to text.\n\nThey\'ve revolutionized the field of AI because of their ability to understand context and process information efficiently.', additional_kwargs={}, response_metadata={}), HumanMessage(content='explain...in one line', additional_kwargs={}, response_metadata={}), AIMessage(content='A transformer is a neural network architecture that uses attention mechanisms to efficiently process sequential data for tasks like translation and text generation.', additional_kwargs={}, response_metadata={})]
+2025-06-14 00:44:19,750 - core.config.logger_config - INFO - Question: explain
+2025-06-14 00:44:21,599 - core.config.logger_config - INFO - Answer: Okay, I understand. You just want me to explain things. To best help you, please provide the topic you want me to explain. For example, you could ask:
+
+*   "Explain photosynthesis"
+*   "Explain the theory of relativity"
+*   "Explain how a refrigerator works"
+
+Once you give me a topic, I'll do my best to provide a clear and concise explanation.
+2025-06-14 00:44:21,603 - core.config.logger_config - INFO - Chat History: [AIMessage(content='A transformer is a neural network architecture that uses attention mechanisms to efficiently process sequential data for tasks like translation and text generation.', additional_kwargs={}, response_metadata={}), HumanMessage(content='explain', additional_kwargs={}, response_metadata={}), AIMessage(content='Okay, I understand. You just want me to explain things. To best help you, please provide the topic you want me to explain. For example, you could ask:\n\n*   "Explain photosynthesis"\n*   "Explain the theory of relativity"\n*   "Explain how a refrigerator works"\n\nOnce you give me a topic, I\'ll do my best to provide a clear and concise explanation.', additional_kwargs={}, response_metadata={})]

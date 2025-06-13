@@ -2,3 +2,6 @@
 secrets.toml
 pycache/
 venv/
+output/
+youtube_data/
+logs/
