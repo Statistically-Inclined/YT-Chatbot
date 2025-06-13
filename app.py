@@ -173,7 +173,7 @@ if submit and url_input:
         deleting_effect(status_placeholder, "📄 Retrieving & Processing the Video’s Transcript or Subtitles")
         typing_effect(status_placeholder, "🎙️ Attempting to Generate Summary using the Transcript")
 
-        transcript_chunks, transcript = get_transcript_with_priority(69, video_id)
+        transcript_chunks, transcript = get_transcript_with_priority(video_id)
         raw_text = transcript
         save_transcript_to_txt(transcript_chunks)
         save_transcript_to_json(transcript_chunks)
