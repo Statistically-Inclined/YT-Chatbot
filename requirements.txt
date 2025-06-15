@@ -177,3 +177,4 @@ youtube-transcript-api==1.1.0
 yt-dlp==2025.5.22
 zipp==3.23.0
 zstandard==0.23.0
+ffmpeg==1.4
